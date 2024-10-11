@@ -1,0 +1,284 @@
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #8B4513; /* Marrom escuro, mais próximo do tema de carne assada */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Espaça o conteúdo: título à esquerda, navegação à direita */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 32px; /* Aumenta o tamanho do título */
+    color: #f4e2d8; /* Cor clara que contrasta com o fundo marrom */
+    font-family: 'Playfair Display', serif; /* Fonte personalizada, estilo rústico */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4e2d8; /* Mantém a cor clara para contraste */
+    font-weight: bold;
+    font-size: 18px; /* Fonte um pouco maior */
+    padding: 10px 15px;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Efeito suave */
+}
+
+nav ul li a:hover {
+    color: #ffcc66; /* Cor dourada ao passar o mouse */
+    border-bottom: 2px solid #ffcc66; /* Adiciona borda ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para telas menores */
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Grid para imagens logo após o header */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: solid 2px black;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Para garantir que o conteúdo se ajuste em telas menores */
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Section (área principal) */
+section {
+    flex: 65%; /* Ocupa 65% da largura */
+    padding: 20px;
+    background-color: #f8f0e3; /* Tom mais quente, remetendo a comida */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #8B4513; /* Sombra leve */
+}
+
+section h2 {
+    font-size: 28px; /* Aumenta o tamanho do título */
+    text-align: left; /* Alinhamento à esquerda */
+    color: #8B4513; /* Marrom escuro, alinhado ao tema */
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 18px; /* Aumenta a fonte para melhor legibilidade */
+    line-height: 1.8; /* Espaçamento entre linhas mais confortável */
+    color: #333; /* Cor mais suave para o texto */
+}
+
+/* Estilo para números de contato */
+.contato-destaque {
+    font-size: 20px; /* Aumenta o tamanho da fonte para os números */
+    font-weight: bold; /* Deixa os números em negrito */
+    color: #b87333; /* Cor que destaca os números */
+    background-color: #f4f4f4; /* Fundo leve para contraste */
+    padding: 5px; /* Espaço interno para destacar melhor */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.contato-destaque a {
+    text-decoration: none; /* Remove a sublinhado dos links */
+    color: #b87333; /* Cor do link igual à cor do destaque */
+}
+
+.contato-destaque a:hover {
+    color: #8B4513; /* Cor do link ao passar o mouse */
+    background-color: #e0e0e0; /* Mudança de fundo ao passar o mouse */
+}
+
+/* Aside (barra lateral) */
+aside {
+    flex: auto; /* Ocupa 30% da largura */
+    background-color: #f4e2d8; /* Cor de fundo suave que remete a madeira clara */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px #8B4513;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+
+aside h3 {
+    color: #8B4513; /* Mesma cor de destaque */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Todas as letras maiúsculas */
+    font-size: 28px; /* Tamanho do título */
+}
+
+aside ul {
+    list-style-type: none; /* Remove o estilo da lista */
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #5a4033; /* Cor do texto dos links */
+    font-size: 16px; /* Aumenta o tamanho do texto dos links */
+    transition: color 0.3s ease; /* Transição suave na cor */
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    
+}
+
+aside ul li a:hover {
+    color: #b87333; /* Destaque em hover */
+}
+
+/* Ajustando o aside para maior separação do formulário */
+form {
+    margin-bottom: 20px; /* Espaço entre o formulário e o aside */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha as seções em telas pequenas */
+    }
+
+    section, aside {
+        flex: 100%; /* Ocupa toda a largura */
+        margin: 10px 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #8B4513;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 22px; /* Aumenta o tamanho do título */
+    color: #f4e2d8; /* Cor clara que contrasta com o fundo marrom */
+    
+}
+
+
+/* Estilização do formulário de contato */
+#contato {
+    background-color: #f4e2d8; /* Cor de fundo suave que remete a madeira clara */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px #8B4513;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato h2 {
+    color: #8B4513; /* Cor marrom que remete à carne assada */
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+    text-transform: uppercase; /* Todas as letras maiúsculas */
+    font-size: 28px; /* Tamanho do título */
+
+}
+
+#contato p {
+    margin-bottom: 20px;
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    color: #5a4033; /* Tom marrom mais escuro */
+    text-align: center; /* Centraliza o texto */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+label {
+    font-weight: bold;
+    color: #5a4033; /* Cor escura, semelhante à madeira */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #8B4513; /* Bordas com cor marrom */
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fdf7f2; /* Cor de fundo clara, remete a papel envelhecido */
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #c55a11; /* Cor de fundo que remete ao fogo */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9f460f; /* Cor mais escura ao passar o mouse */
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #5a4033; /* Mesma cor dos textos */
+}

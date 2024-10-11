@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomenda de Carnes Assadas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Encomenda de Carnes Assadas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contatoLink">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Imagens em grid logo após o header -->
+    <div class="image-grid">
+        <img src="frangoAssado.webp" alt="Carne assada deliciosa 1">
+        <img src="costela assada.webp" alt="Carne assada deliciosa 2">
+        <img src="pernil porco Assado.webp" alt="Carne assada deliciosa 3">
+        <img src="linguca_assada.webp" alt="Carne assada deliciosa 4">
+        <img src="galeto_assado.webp" alt="Carne assada deliciosa 5">
+        <img src="paleta_assada.webp" alt="Carne assada deliciosa 6">
+    </div>
+
+    <div class="container">
+        <!-- Seção Home -->
+        <section id="home">
+            <h2>Bem-vindo à Melhor Encomenda de Carnes Assadas!</h2>
+            <p>Somos especialistas em preparar carnes assadas de alta qualidade, oferecendo uma experiência única em
+                sabor e tradição. Nosso serviço de encomenda foi pensado para quem deseja praticidade, qualidade e o
+                verdadeiro sabor da carne assada no conforto de sua casa.</p>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Fundada por apaixonados por churrasco, a Encomenda de Carnes Assadas nasceu com a missão de levar a
+                qualidade de um verdadeiro churrasco até a sua casa. Usamos cortes selecionados e técnicas de preparo
+                tradicionais, sempre garantindo um sabor inigualável em cada pedido.</p>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contatoLink">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Para realizar suas encomendas ou esclarecer dúvidas, entre em contato pelos canais abaixo:</p>
+            <p>
+                <strong>Telefone:</strong> 
+                <span class="contato-destaque"><a href="tel:+5511999989999">+55 11 99825-5024</a></span><br>
+                <strong>WhatsApp:</strong> 
+                <span class="contato-destaque"><a href="https://wa.me/5541996784942">+55 41 9678-4942</a></span>
+            </p>
+        </section>
+        
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Dúvidas ou sugestões</p>
+
+            <!-- Formulário de Contato -->
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <p id="status"></p>
+        </section>
+
+        <aside>
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="#">Receitas de Churrasco</a></li>
+                <li><a href="#">Tipos de Cortes de Carne</a></li>
+                <li><a href="#">Temperos para Carnes</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Encomenda de Carnes Assadas. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
